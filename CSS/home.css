@@ -1,0 +1,112 @@
+:root {
+	--transparentOverlay: rgba(0, 0, 0, 0.158);
+	--transparent: rgba(0, 0, 0, 0);
+}
+
+.centered-div {
+	position: absolute;
+	top: 30%;
+	left: 10%;
+
+	width: 80%;
+	height:40%;
+}
+
+.content-box {
+	background: var(--transparentOverlay);
+
+	/*Make this a flexbox so that items will nicely align in rows.*/
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+
+	/*Create rounded edges*/
+	border-style: solid;
+	border-width: 10px;
+	border-radius: 25px;
+	border-color: var(--transparentOverlay);
+
+	min-width: 100%;
+	min-height: 100%;
+}
+.content-box h1 {
+	font-size: 32pt;
+
+	/*Underline the text nice and pretty*/
+	padding-bottom: 2px;
+	border-bottom: 2px solid white;
+	margin-right: 32px;
+}
+.content-box p {
+	margin-right: 32px;
+	font-size: 18px;
+}
+.content-box li {
+	font-size: 20px;
+	padding-bottom: 4px;
+}
+.content-box img {
+	width: 325px;
+	height: 325px;
+
+	/*Crop the image to fit*/
+	object-fit: cover;
+
+	/*Round image corners*/
+	border-radius: 15%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: var(--transparentOverlay);
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	font-style: italic;
+}
+
+.content-box-vertical {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	padding-top: 8px;
+	padding-left: 8px;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+
+	max-width: 250px;
+}
+.social-links img {
+	width: 16px;
+	height: auto;
+
+	/*Undo the padding from above.*/
+	padding-left: 0px;
+	padding-top: 0px;
+	/*Undo the border*/
+	border-width: 0px;
+	/*Space out from link to the right*/
+	padding-right: 4px;
+}
+.social-links a {
+	color: white;
+	font-style: italic;
+	font-size: 10pt;
+
+	/*Space out from logo to the left*/
+	padding-right: 8px;
+}
+
+html {
+    background: url(../IMG/bg.png), linear-gradient(135deg, rgba(109, 168, 212, 1) 15%,rgba(93,77,140,1) 52%,rgba(118, 35, 37, 1) 100%);
+    max-height: 100%;
+    font-family: Helvetica;
+    color: white;
+    overflow-y: scroll;
+	display: flex;
+}
