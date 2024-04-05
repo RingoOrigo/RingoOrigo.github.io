@@ -1,0 +1,10 @@
+html {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://wallpapercave.com/wp/wp11350290.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    font-family: Helvetica;
+    color: white;
+    overflow-y: scroll;
+	display: flex;
+}
