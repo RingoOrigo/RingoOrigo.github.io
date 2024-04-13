@@ -5,7 +5,8 @@ const splashField = document.getElementById("splash_text");
 const splashOptions = [
     "Join the endless now.",
     "Drive it in! Release the power of Ouroboros!",
-    "Rewind our clocks, back to the start!"
+    "Rewind our clocks, back to the start!",
+    "The burden is mine alone to bear."
 ];
 
 // Update the text with a random selection from within the splashOptions array.
