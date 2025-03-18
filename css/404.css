@@ -1,0 +1,62 @@
+:root {
+    --nierBlack: #12100C;
+    --nierWhite: #dad9d5;
+    --nierGray: #797773;
+}
+
+@font-face {
+    font-family: "Rodin";
+    src: url(../res/fon/FOT-Rodin\ Pro\ DB.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--nierGray);
+}
+
+.footer p {
+    font-size: 10pt;
+}
+
+.full-screen-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+    font-family: Monospace;
+    font-size: 12pt;
+    letter-spacing: 2px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background-color: var(--nierBlack);
+    color: var(--nierWhite);
+    font-family: "Rodin", sans-serif;
+    overflow: hidden;
+}
