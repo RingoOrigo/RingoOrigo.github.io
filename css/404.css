@@ -11,6 +11,15 @@
     font-style: normal;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -21,6 +30,7 @@
 
 .footer p {
     font-size: 10pt;
+    animation: fadeIn 15s;
 }
 
 .full-screen-div {
@@ -34,6 +44,8 @@
 
 h1 {
     margin-bottom: 0;
+    animation: fadeIn 2s;
+    font-size: 32pt;
 }
 
 p {
@@ -41,6 +53,8 @@ p {
     font-family: Monospace;
     font-size: 12pt;
     letter-spacing: 2px;
+    animation: fadeIn 10s;
+    font-size: 16pt;
 }
 
 canvas {
