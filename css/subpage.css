@@ -73,7 +73,6 @@
 }
 
 .back-button a {
-    line-height: 8px;
     color: var(--nierBrown);
     font-size: 12pt;
     text-decoration: none;
@@ -170,8 +169,11 @@ html {
     }
     .back-button {
         margin-bottom: 44px;
+        height: fit-content;
+        border: 2px solid transparent;
+        border-radius: 8px;
     }
     .back-button a {
-        font-size: 24pt;
+        font-size: 5vw;
     }
 }

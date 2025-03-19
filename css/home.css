@@ -166,12 +166,13 @@ html {
     }
 
     .menu a {
-        font-size: 24pt;
+        font-size: 5vw;
     }
 
     html {
         background-image: url("../res/img/bg_dark_PORT.png");
         background-size: cover;
+        background-color: var(--nierBlack);
         background-position: center;
         background-repeat: no-repeat;
     
