@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>[H]ome</title>
+
+    <!-- Meta content for website embeds -->
+    <meta property = "og:title" content = "Ringo Origo - [H]ome">
+    <meta property = "og:description" content = "Ringo Origo's personal website.">
+    <meta property = "og:url" content = "https://ringoorigo.github.io"/>
+    <meta property = "og:image" content = "res/img/icon_preview.png">
+    <meta property = "og:type" content = "website">
+
+    <!-- Stylesheet -->
+    <link rel = "stylesheet" href = "css/home.css">
+
+    <!-- Favicon! This is the YoRHa logo from NieR: Automata. (Owned by Square Enix)  -->
+    <link rel = "icon" href = "res/img/fav_yorha.png">
 </head>
 
 <html>
     <body>
-        <p>index.html</p>
+        <!-- Below is just a div to cover the entire screen. By itself, it does nothing. -->
+        <div id = "particleContainer"></div>
+        <!-- Cover the screen with a container for easier positioning. -->
+        <div class = "full-screen-container">
+            <!-- Contain the logo png in a container for easier centering and such. -->
+            <div class = "logo-container">
+                <img src = "res/img/logo_RingoOrigo.png" alt= "RiNGo ORiGo">
+            </div>
+            <!-- Contain links to each subpage in a menu container -->
+            <div class = "menu">
+                <a href="html/about.html">[A]bout</a>
+                <a href="html/portfolio.html">port[F]olio</a>
+                <a href="html/contact.html">contac[T]</a>
+                <a href="html/resume">re[S]ume</a>
+            </div>
+            <!-- This footer will be on EVERY page. A simple disclaimer and a bit of info -->
+            <div class = "footer">
+                <p>(Website created by Ringo Origo. Inspired by NieR: Automata, owned by Square Enix.)</p>
+            </div>
+        </div>
+        <!-- Invoke the script to generate particles. 
+             This makes use of the particleContainer div mentioned earlier -->
+        <script src="js/genParticles.js"></script>
     </body>
 </html>

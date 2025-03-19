@@ -1,0 +1,161 @@
+:root {
+    --nierBlack: #12100C;
+    --nierWhite: #dad9d5;
+    --nierCream: #dad4bb;
+    --nierGray: #797773;
+    --nierBrown: #454138;
+}
+
+@keyframes underline {
+    0% {
+        border-bottom: 2px solid transparent;
+    }
+    100% {
+        border-bottom: 2px solid var(--nierBrown);
+        padding: 0px 8px 0px 8px;
+    }
+}
+
+@keyframes blur {
+    0%, 100% {
+        text-shadow: 0 0 0px rgba(69, 65, 56, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(69, 65, 56, 0.8);
+    }
+}
+
+@font-face {
+    font-family: "Rodin Pro DB";
+    src: url(../res/fon/FOT-Rodin\ Pro\ DB.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rodin Pro N";
+    src: url(../res/fon/FOT-Rodin\ Pro\ N.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--nierGray);
+}
+
+.footer p {
+    font-size: 10pt;
+    animation: fadeIn 15s;
+    font-family: monospace;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 32px;
+    margin-right: 32px;
+    padding: 0px 8px 0px 8px;
+    background-color: var(--nierCream);
+}
+
+.back-button a {
+    line-height: 8px;
+    color: var(--nierBrown);
+    font-size: 12pt;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 0px 8px 0px 8px;
+}
+
+.back-button a:hover {
+    animation: underline 0.5s forwards, blur 2s infinite;
+}
+
+.vert-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-bar {
+    height: match-parent;
+    width: 32px;
+    border: 2px solid var(--nierGray);
+    background-color: var(--nierBrown);
+    margin-right: 16px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.section-container img {
+    width: 240px;
+    height: match-parent;
+    object-fit: cover;
+    margin-right: 16px;
+    border: 2px solid var(--nierGray);
+    user-select: none;
+}
+
+.section-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin-right: 32px;
+    background-color: var(--nierCream);
+}
+
+.section-contents h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-left: 16px;
+    background-color: var(--nierBrown);
+    color: var(--nierGray);
+}
+
+.section-contents p {
+    margin: 0px 16px 0px 16px;
+    color: var(--nierBrown);
+}
+
+h1 {
+    font-family: "Rodin Pro N", sans-serif;
+    font-size: 40px;
+    margin-left: 16px;
+    color: var(--nierBrown);
+    letter-spacing: 12px;
+    text-shadow: 4px 4px 2px var(--nierGray);
+}
+
+html {
+    background-image: url("../res/img/bg_light_tile.png");
+
+    font-family: "Rodin Pro DB", sans-serif;
+    font-size: 16px;
+    color: var(--nierGray);
+}
+
+@media screen and (orientation: portrait) {
+    img {
+        display: none;
+    }
+    .footer {
+        z-index: -1;
+    }
+    html {
+        padding-bottom: 64px;
+    }
+    .back-button a {
+        font-size: 16pt;
+    }
+}
