@@ -134,7 +134,7 @@
 }
 
 html {
-    background-image: url("../res/img/bg_dark_LAND.png");
+    background-image: url("../res/img/bg_dark_LAND.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@ html {
     }
 
     html {
-        background-image: url("../res/img/bg_dark_PORT.png");
+        background-image: url("../res/img/bg_dark_PORT.webp");
         background-size: cover;
         background-color: var(--nierBlack);
         background-position: center;
