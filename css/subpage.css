@@ -45,6 +45,7 @@
     width: 100%;
     text-align: center;
     color: var(--nierGray);
+    z-index: -1;
 }
 
 .footer p {
@@ -154,15 +155,14 @@ html {
     color: var(--nierGray);
 
     overflow-x: hidden;
+    background-attachment: fixed;
+    padding-bottom: 64px;
 }
 
 /* Overrides for portrait mode. Basically the changes necessary to look decent on mobile */
 @media screen and (orientation: portrait) {
     img {
         display: none;
-    }
-    .footer {
-        z-index: -1;
     }
     html {
         padding-bottom: 64px;
