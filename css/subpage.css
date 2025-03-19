@@ -63,6 +63,15 @@
     background-color: var(--nierCream);
 }
 
+.section-contents a {
+    color: var(--nierBrown);
+    text-decoration: underline;
+}
+
+.section-contents a:hover {
+    animation: blur 2s infinite;
+}
+
 .back-button a {
     line-height: 8px;
     color: var(--nierBrown);
@@ -91,6 +100,7 @@
 }
 
 .section-container {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     margin-left: 32px;
@@ -143,8 +153,11 @@ html {
     font-family: "Rodin Pro DB", sans-serif;
     font-size: 16px;
     color: var(--nierGray);
+
+    overflow-x: hidden;
 }
 
+/* Overrides for portrait mode. Basically the changes necessary to look decent on mobile */
 @media screen and (orientation: portrait) {
     img {
         display: none;
@@ -154,6 +167,9 @@ html {
     }
     html {
         padding-bottom: 64px;
+    }
+    .back-button {
+        margin-bottom: 44px;
     }
     .back-button a {
         font-size: 16pt;
