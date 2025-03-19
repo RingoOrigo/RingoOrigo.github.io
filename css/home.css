@@ -161,6 +161,14 @@ html {
         flex-direction: column;
     }
     
+    .logo-container img {
+        width: 80%;
+    }
+
+    .menu a {
+        font-size: 24pt;
+    }
+
     html {
         background-image: url("../res/img/bg_dark_PORT.png");
         background-size: cover;
