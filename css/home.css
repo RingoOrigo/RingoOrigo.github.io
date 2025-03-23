@@ -52,7 +52,7 @@
 }
 
 .logo-container img {
-    width: 60%;
+    width: 60vw;
     padding-right: 12.5%;
     padding-left: 12.5%;
     height: auto;
@@ -162,7 +162,7 @@ html {
     }
     
     .logo-container img {
-        width: 80%;
+        width: 80vw;
     }
 
     .menu a {
